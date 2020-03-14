@@ -2,16 +2,16 @@ export const a =
 `/*
 *创意来自 strml.net
 *
-* 大家好，我是Gio,
+* 大家好，我是Gio，
 *
 * 这张页面好无聊啊！我们加一点小东西如何？
 * 首先，先来添加一下全局的动画效果！
-*/
+*/ 
 
 *{
   -webkit-transition: all .8s;
   transition: all .8s;
-}
+} 
 
 /* 啊？没效果么？背景变一下颜色可好？*/
 
@@ -29,7 +29,7 @@ html {
 
 /* 哈哈！厉害吧！？
 
-* 你的眼睛是不是要瞎了?那字体也变一下呗? 
+* 抱歉抱歉，你的眼睛是不是要瞎了？那字体也变一下呗？
 
 */
 
@@ -123,7 +123,7 @@ body {
 
 /*  诶？没有效果吗？别急 */
 .resume-wrapper {
-  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+  -webkit-transform: rotateX(0deg) rotateY(190deg) ;
 }
 
 /*  是不是很帅？？？ */
@@ -167,5 +167,5 @@ export const resumeTxt =
 
 链接
 =============
-- [本项目的源代码](https://github.com/215566435/React-awesome-resume)`
+- [本项目的源代码](https://github.com/qq1193078960/resume-gio)`
 

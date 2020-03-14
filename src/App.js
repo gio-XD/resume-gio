@@ -23,13 +23,13 @@ function App() {
     setTimeout(() => {
       if (nodeName === 'page-wrapper') {
         setStyletext(text => {
-          const { styleText } = text
+          const { styleText,domStyleText } = text
           let temp = styleText + char
-          // let html = Prism.highlight(temp,Prism.languages.css,)
+          let html =char = '*' ?  Prism.highlight(temp,Prism.languages.css,'css') : temp 
 
           return {
             styleText: temp,
-            domStyleText: temp
+            domStyleText: html
           }
         })
 
@@ -80,8 +80,8 @@ function App() {
   return (
     <>
       <div className='page-wrapper' ref={text}>
-        <div dangerouslySetInnerHTML={{ __html: styleText.styleText }} ></div>
-        <style dangerouslySetInnerHTML={{ __html: styleText.domStyleText }}></style>
+        <div dangerouslySetInnerHTML={{ __html: styleText.domStyleText }} ></div>
+        <style dangerouslySetInnerHTML={{ __html: styleText.styleText }}></style>
       </div>
       <div className='resume-wrapper'
         ref={resume}
