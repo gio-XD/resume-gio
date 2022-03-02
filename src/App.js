@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, memo } from "react";
 import Prism from "prismjs";
 import showdown from "showdown";
 import { a, b, resumeTxt } from "./file";
@@ -7,7 +7,7 @@ import "./App.css";
 let timer,
   needLongerTime = ["？", "，", "！"];
 
-function App() {
+function Resume() {
   const text = useRef(null);
   const resume = useRef(null);
   const [styleText, setStyletext] = useState({
@@ -97,4 +97,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(Resume);
